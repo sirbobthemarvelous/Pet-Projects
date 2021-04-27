@@ -6,6 +6,6 @@ import matplotlib.pyplot as pyplot
 from matplotlib import style
 from joblib import dump, load
 
-#data = pd.read_csv(r"C:\Users\robzh\Documents\python\Pet Projects Only For Fun (not Counting Nifty)\Name Count Trend\fire-count.csv", sep=';')
+data = pd.read_csv(r"C:\Users\robzh\Documents\python\Pet Projects Only For Fun (not Counting Nifty)\Name Count Trend\FirestarNamedrops.csv")
 
 print(data.head())

@@ -1,4 +1,4 @@
-
+#ok no this dataset is a bit too complicated just jump into warrior cats
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
@@ -36,9 +36,10 @@ for _ in range(300):
     accuracy = linear.score(x_test, y_test)
     print(accuracy)
 
+'''
     if accuracy > best:
         best = accuracy
-        '''
+        
         with open("studentmodel.pickle", "wb") as f:
             pickle.dump(linear, f)
             # save a pickle file in a directory """
@@ -51,6 +52,8 @@ print('Co: \n', + linear.coef_)
 print('Intercept: \n', + linear.intercept_)
 '''
 
+#above is the scoring system and the pickle
+
 predictions = linear.predict(x_test)
 #takes two dimentional arrays and makea bunch of predictions
 for x in range(len(predictions)):
@@ -59,6 +62,7 @@ for x in range(len(predictions)):
 style.use("ggplot")
 # Drawing and plotting model
 plot = "G1" # Change this to G1, G2, studytime or absences to see other graphs
+pyplot.plot(x_test, predictions, label = "Linear Regression", color = 'b')
 pyplot.scatter(data[plot], data["G3"])
 pyplot.legend(loc=4)
 pyplot.xlabel(plot)
