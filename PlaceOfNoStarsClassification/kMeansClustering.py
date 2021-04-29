@@ -3,6 +3,7 @@ import sklearn
 from sklearn.preprocessing import scale
 from sklearn.datasets import load_digits
 from sklearn.cluster import KMeans
+# https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html?highlight=kmeans#sklearn.cluster.KMeans
 from sklearn import metrics
 
 digits = load_digits()
